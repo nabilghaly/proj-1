@@ -1,0 +1,993 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'varela round', sans-serif;
+}
+
+.header {
+    height: 100vh;
+}
+
+.container {
+    height: 100vh;
+    background-image: url(../images/brick-black-wall.jpg);
+    position: relative;
+}
+
+.header-content {
+    width: 100%;
+    height: 45px;
+    background-color: hsl(0, 0%, 0%, 0.5);
+    position: fixed;
+    z-index: 10;
+
+}
+
+.logo {
+    margin-left: 50px;
+    width: 100px;
+    height: 45px;
+    float: left;
+}
+
+.Niv {
+    margin-left: 540px;
+    position: absolute;
+    margin-top: 12px;
+    opacity: 0.8;
+}
+
+.links>li {
+    display: inline-block;
+    margin-left: 27px;
+    list-style: none;
+}
+
+.links>li {
+    float: left;
+}
+
+.links>li a {
+    text-decoration: none;
+    color: rgb(255, 32, 32);
+    font-size: 16px;
+}
+
+.b {
+    position: relative;
+}
+
+.bp {
+    font-size: 16px;
+    padding-top: 14px;
+    text-align: center;
+    background-color: blue;
+    height: 50px;
+    width: 120px;
+    margin-top: 11px;
+    position: absolute;
+    margin-left: -30px;
+    visibility: hidden;
+}
+
+.bp-c {
+    color: white;
+}
+
+.b:hover+.bp {
+    visibility: visible;
+}
+
+
+.links>li>a::after,
+.links>li>a.line::after {
+    content: "";
+    background-color: blue;
+    height: 3px;
+    width: 0%;
+    display: block;
+    margin-top: 1px;
+}
+
+.links>li>a:hover::after {
+    width: 100%;
+    transition: 0.5s;
+}
+
+.links>li>a.line::after {
+    width: 100%;
+}
+
+/* ///////////////////////////////////// NIV /////////////////////////////////////////// */
+
+.home-container-p {
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+}
+
+.p-we {
+    padding-bottom: 10px;
+    font-size: 52px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.p-morbi {
+    font-size: 18px;
+    color: blanchedalmond;
+}
+
+.btn {
+    padding: 14px 27px;
+    font-size: 18px;
+    margin: 8px 8px 0 0px;
+    border-radius: 6px;
+    border-style: none;
+}
+
+.btn-learn {
+    color: white;
+    background-color: blue;
+}
+
+.btn:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+/* ///////////////////////////////////// home /////////////////////////////////////////// */
+
+.icon {
+    font-size: 25px;
+    margin: 25px 0 10px 0;
+    color: rgb(97, 150, 255);
+}
+
+.home {
+    width: 100%;
+    height: 85vh;
+}
+
+.home-container {
+    position: relative;
+    width: 100%;
+    height: 35%;
+}
+
+.Welcome-section {
+    position: absolute;
+    margin: 10% 0 0 36%;
+}
+
+.line-2 {
+    width: 60px;
+    content: "";
+    background-color: rgba(0, 0, 255, 0.6);
+    height: 4px;
+    margin: 10px 0 0 41%;
+}
+
+.h-Welcome {
+    font-size: 35px;
+}
+
+.Customizible-Divs-container {
+    position: relative;
+    width: 100%;
+}
+
+.Fully-Customizible-parent {
+    position: absolute;
+    margin-left: 10%;
+}
+
+.Fully-Customizible {
+    float: left;
+    border: gray 1px solid;
+    margin-right: 5%;
+    text-align: center;
+    width: 27%;
+    height: 230px;
+    padding: 0 45px 0 45px;
+}
+
+.Fully-Customizible>p {
+    font-size: 17px;
+    margin-top: 20px;
+    color: gray;
+    word-spacing: 5px;
+}
+
+.Fully-Customizible>a {
+    line-height: 50px;
+    text-decoration: none;
+    color: #6195ff;
+    text-transform: capitalize;
+}
+
+.Fully-Customizible>h2 {
+    margin-top: 15px;
+}
+
+.FC-after {
+    position: relative;
+}
+
+.FC-after::after {
+    position: absolute;
+    content: "";
+    width: 0px;
+    height: 0px;
+
+    top: 0;
+    left: 0;
+
+    background-color: rgba(0, 0, 0, 0.8);
+
+}
+
+.FC-after:hover::after {
+    width: 100%;
+    height: 100%;
+
+    transition: 0.5s;
+    z-index: -1;
+}
+
+.Fully-Customizible:hover .FC {
+    color: #fff;
+    transition: 0.7s;
+}
+
+/* ///////////////////////////////////// Featured Works /////////////////////////////////////////// */
+
+.Featured {
+    height: 120vh;
+    background-color: #e8e8e8;
+}
+
+.Featured-header {
+    height: 30vh;
+}
+
+.Featured-title {
+    text-align: center;
+    padding-top: 10%;
+    font-size: 35px;
+    text-transform: capitalize;
+}
+
+.line-3 {
+    margin: auto;
+    height: 4px;
+    width: 60px;
+    background-color: blue;
+}
+
+.container-Featured {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+}
+
+.category-container {
+    margin: auto;
+    width: 80%;
+    height: 90vh;
+}
+
+.category-content {
+    float: left;
+    width: 310px;
+    height: 310px;
+    margin-bottom: 20px;
+}
+
+.MLR {
+    margin: 0 38px;
+}
+
+.category-item-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.category-div-content {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    visibility: hidden;
+}
+
+.category-item-container>img {
+    position: absolute;
+    margin: 20px 0 0 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: white;
+}
+
+.category-div {
+    position: absolute;
+    width: 310px;
+    height: 310px;
+    margin: auto;
+    text-align: center;
+}
+
+.category-content:hover .category-div-content {
+    visibility: visible;
+    transition: 2s;
+}
+
+.category {
+    padding-top: 108px;
+    margin-bottom: 10px;
+    color: #6195ff;
+    font-size: 25px;
+}
+
+.lorem-content-title {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.icon-2 {
+    color: rgba(185, 56, 56, 0.719);
+    font-size: 20px;
+    background-color: #6195ff;
+    width: 35px;
+    height: 35px;
+    padding-top: 7px;
+}
+
+.icon-2:active {
+    color: red;
+    transition: 0.5;
+}
+
+/* //////////////////////// what we offer ///////////////////////////////////////// */
+
+.Offer-contenair {
+    width: 100%;
+    height: 150vh;
+}
+
+.Offer-contenair-sec {
+    width: 100%;
+    height: 21.4%;
+    position: relative;
+}
+
+.offer-text>h2 {
+    font-size: 35px;
+}
+
+.offer-text {
+    position: absolute;
+    margin: 122.5px 0 0 503px;
+}
+
+.line-4 {
+    width: 60px;
+    height: 4px;
+    background-color: rgb(76, 76, 255);
+    margin: 10px 0 0 90px;
+}
+
+/* /////////////////////////////////////////////////////////////////////////// */
+
+.Offer-div-contenair {
+    height: 39.3%;
+    position: relative;
+}
+
+.offers-contenair {
+    margin: auto;
+    width: 80%;
+    height: 50vh;
+}
+
+.CMC {
+    margin: 0 38.3px 0 38.3px;
+}
+
+.cards-div {
+    border: gray 0.3px solid;
+    width: 310px;
+    height: 45%;
+    float: right;
+    margin-bottom: 43px;
+    position: relative;
+}
+
+.content {
+    margin-top: 30px;
+    margin-left: auto;
+    width: 77%;
+}
+
+.content>p {
+    text-transform: capitalize;
+    line-height: 27px;
+    color: grey;
+    width: 210px;
+    margin-top: 15px;
+    font-size: 17px;
+}
+
+.icon-3 {
+    margin-top: -135px;
+    margin-left: 15px;
+    font-size: 30px;
+    color: rgb(99, 99, 255);
+}
+
+.cards-div::after {
+    position: absolute;
+    content: "";
+
+    width: 0;
+    height: 0;
+
+    top: 0;
+    left: 0;
+
+    background-color: rgba(0, 0, 0, 0.849);
+
+    z-index: -1;
+}
+
+.cards-div:hover::after,
+.cards-div:hover .content>h2 {
+    color: white;
+    width: 100%;
+    height: 100%;
+
+    transition: 1s;
+}
+
+/* /////////////////////////////////////////////////////////////////////////// */
+
+.side-contenair {
+    position: absolute;
+    margin-left: 125px;
+}
+
+.Choose-Us-contenair>h2 {
+    font-size: 35px;
+}
+
+.side-contenair>p {
+    margin-top: 50px;
+    font-size: 17px;
+    color: grey;
+    width: 450px;
+}
+
+.side-contenair>ul {
+    margin-top: 25px;
+}
+
+.side-contenair>ul>li {
+    margin-top: 20px;
+    list-style: none;
+    color: grey;
+}
+
+.side-contenair>ul>li>i {
+    color: rgb(66, 66, 245);
+    font-size: 20px;
+}
+
+.line-5 {
+    width: 60px;
+    height: 4px;
+    background-color: rgb(76, 76, 255);
+    margin: 10px 0 0 0;
+}
+
+.Us-contenair {
+    width: 55%;
+    height: 39.3%;
+    position: relative;
+    float: left;
+}
+
+/* /////////////////////////////////////////////////////////////////////////// */
+
+.dotted-contenair {
+    margin-top: -10px;
+    margin-left: 150px;
+}
+
+.dotted-contenair>ul>li {
+    float: left;
+    margin-left: 25px;
+    font-size: 35px;
+    color: gray;
+}
+
+.dotted-contenair>ul>li.blue {
+    color: rgb(94, 94, 250);
+}
+
+.dotted-contenair>ul>li:hover {
+    color: rgb(94, 94, 250);
+}
+
+.Img-contenair {
+    width: 45%;
+    height: 39.3%;
+    position: relative;
+    float: right;
+}
+
+/* ////////////////////////////////////////////////////////////////////////// */
+
+.Purchase-Contenair-Sec {
+    height: 150vh;
+    width: 100%;
+}
+
+.Achievements-Div-Contenair-Img {
+    background-image: url(../images/images-div-1.jpg);
+    background-attachment: fixed;
+    height: 350px;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+}
+
+.Achievements-Div {
+    position: absolute;
+    width: 68%;
+    height: 100px;
+    margin: 140px 0 0 200px;
+}
+
+.Achievement-Div {
+    float: left;
+    text-align: center;
+}
+
+.MD-1 {
+    margin: 0 138px 0 138px;
+}
+
+.MD-2 {
+    margin: 0 138px 0 0;
+}
+
+.Achievement-Div>i {
+    font-size: 27px;
+    color: rgb(84, 84, 255);
+}
+
+.Achievement-Div>h3 {
+    font-size: 35px;
+    margin-top: 10px;
+    color: white
+}
+
+.Achievement-Div>span {
+    font-size: 17px;
+    margin-top: 5px;
+    color: white;
+}
+
+.Pricing-Contenair-Sec {
+    position: relative;
+    height: 90vh;
+    width: 100%;
+    margin-top: -75%;
+    background-color: rgb(248, 248, 248);
+}
+
+.Pricing-contenair {
+    position: relative;
+    height: 30vh;
+}
+
+.Pricing-contenair>h2 {
+    font-size: 35px;
+    margin-top: 170px;
+    margin-left: 520px;
+}
+
+.pricing-line {
+    background-color: rgb(100, 100, 255);
+    height: 4px;
+    width: 60px;
+    margin: auto;
+    margin-top: 8px;
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////// */
+
+.Basic-Plans-Contenair {
+    position: absolute;
+    margin-top: -120px;
+    margin-left: 130px;
+    height: 340px;
+    width: 80%;
+}
+
+.Basic-Plans-divs {
+    width: 300px;
+    height: 100%;
+    float: left;
+    text-align: center;
+    border: gray 0.5px solid;
+    position: relative;
+}
+
+.Basic-Plans-divs>ul>li {
+    margin-top: 13px;
+}
+
+.Basic-Plans-divs>p {
+    margin: 30px 0 30px 0;
+    text-transform: uppercase;
+    color: gray;
+    font-size: 17px;
+}
+
+.Basic-Plans-divs>button {
+    margin-top: 15px;
+    padding: 4px 12px 4px 12px;
+    border-color: rgb(88, 88, 255);
+    background-color: white;
+}
+
+.Basic-Plans-divs>div {
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    border: rgb(86, 86, 248) solid 2px;
+    margin: auto;
+    margin-top: -15px;
+
+}
+
+.Basic-Plans-divs>div>span {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.Basic-Plans-divs>div>h3 {
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.Basic-Plans-divs>ul {
+    list-style: none;
+    color: gray;
+}
+
+.BPDM {
+    margin: 0 5.3% 0 5.3%;
+}
+
+.Basic-Plans-divs::after {
+    position: absolute;
+    content: "";
+
+    top: 0;
+    right: 0;
+
+    background-color: rgb(177, 177, 177);
+
+    width: 100%;
+    height: 0%;
+    opacity: 0.6;
+
+}
+
+.Basic-Plans-divs:hover::after,
+.Basic-Plans-divs:hover .hover-red>span,
+.Basic-Plans-divs:hover .hover-red>h3 {
+    color: rgb(255, 0, 0);
+    height: 100%;
+    transition: 0.7s;
+}
+
+.Basic-Plans-divs:hover .hover-red {
+    color: rgb(255, 0, 0);
+    transition: 0.3s;
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////////// */
+
+.intro-img-contenair {
+    background-image: url(../images/image-div-2.jpg);
+    background-attachment: fixed;
+    height: 350px;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    padding-top: 45px;
+}
+
+.into-bio {
+    float: left;
+    width: 34%;
+    margin: 100px -15% 0 18%;
+    color: white;
+}
+
+.upper-div>span,
+.upper-div>img {
+    float: left;
+    margin-right: 15px;
+    color: rgb(106, 106, 255);
+}
+
+.lowwer-div {
+    margin: 50px 0 0 15px;
+    font-size: 14px;
+    width: 85%;
+}
+
+.upper-div>img {
+    border-radius: 50%;
+    margin-top: -10px;
+}
+
+/* ///////////////////////////////////////////////////////////////////// */
+
+.Team-News-contenair {
+    height: 200vh;
+    width: 100%;
+}
+
+.Our-Team-contenair {
+    height: 30vh;
+    position: relative;
+}
+
+.Team-text {
+    position: absolute;
+    font-size: 35px;
+    margin: 120px 0 0 550px;
+}
+
+.Team-line {
+    height: 4px;
+    width: 60px;
+    background-color: rgb(84, 84, 253);
+    margin: auto;
+    margin-top: 9px;
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+
+.Team-divs-contenair {
+    height: 40vh;
+}
+
+.our-team-divs {
+    width: 70%;
+    margin: auto;
+    position: relative;
+}
+
+.team-divs {
+    height: 290px;
+    width: 30%;
+    float: left;
+    padding: 20px 5px 20px 5px;
+    text-align: center;
+    background-color: rgb(209, 202, 202);
+    position: relative;
+}
+
+.MID_div {
+    margin: 0 44px 0 44px;
+}
+
+.over-lay {
+    position: absolute;
+    height: 200px;
+    width: 202px;
+    margin: 0 0px 50px 27px;
+    background-color: rgb(128, 128, 128, 0.5);
+    visibility: hidden;
+}
+
+.over-lay>a {
+    padding-top: 10px;
+    font-size: 28px;
+    color: white;
+    background-color: rgba(0, 255, 255, 0.37);
+    margin-left: 160px;
+    display: block;
+}
+
+.team-divs:hover .over-lay {
+    visibility: visible;
+}
+
+.h4-1 {
+    font-size: 18px;
+    margin-top: 7px;
+}
+
+.h4-2 {
+    font-size: 12px;
+    margin-top: 7px;
+    color: gray;
+}
+
+.team-divs:hover .h4-1 {
+    color: white;
+    transition: 0.7s;
+}
+
+.team-divs:hover .h4-2 {
+    color: blue;
+}
+
+.team-divs::after {
+    position: absolute;
+
+    content: " ";
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 0;
+
+    background-color: rgb(0, 0, 0, 0.3);
+}
+
+.team-divs:hover::after {
+    height: 100%;
+    transition: 1.5s;
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+
+.Recent-News-contenair {
+    height: 30vh;
+    position: relative;
+}
+
+.News-text {
+    position: absolute;
+    font-size: 35px;
+    margin: 120px 0 0 550px;
+}
+
+.Recent-line {
+    height: 4px;
+    width: 60px;
+    background-color: rgb(84, 84, 253);
+    margin: auto;
+    margin-top: 9px;
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////// */
+
+.News-conanaier-div {
+    height: 62vh;
+}
+
+.New-divs {
+    margin-left: 140px;
+}
+
+.News>ul>li {
+    display: inline-block;
+    font-size: 12px;
+    margin: 20px 0 20px 0;
+}
+
+.News>p {
+    margin: 10px 0 10px 0;
+    word-spacing: 1.6px;
+    line-height: 22px;
+    color: gray;
+}
+
+.News>a,
+.News>ul>li>i {
+    color: rgb(82, 82, 255);
+    text-decoration: none;
+}
+
+.MID-li {
+    margin: 0 10px 0 10px;
+}
+
+.News {
+    width: 300px;
+    position: relative;
+    padding: 17px;
+    float: left;
+}
+
+.News::after {
+    position: absolute;
+
+    content: " ";
+
+    width: 100%;
+    height: 0;
+
+    top: 0;
+    right: 0;
+
+    background-color: rgba(90, 90, 255, 0.3);
+}
+
+.News:hover::after {
+    height: 100%;
+    transition: 1s;
+}
+
+.MID-FD {
+    margin: 0 40px 0 40px;
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////////////// */
+
+.footer {
+    height: 40vh;
+    background-color: rgb(77, 75, 75);
+    padding-top: 100px;
+}
+
+.copyright>ul>li {
+    list-style: none;
+    display: inline-block;
+    font-size: 30px;
+    background-color: rgb(91, 141, 250);
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 50%;
+    margin-top: 15px;
+}
+
+.copyright>ul>li>a>i {
+    color: aliceblue;
+}
+
+.copyright>ul {
+    margin-left: 10px;
+}
+
+
+.copyright {
+    margin: 0 0 0 500px;
+}
+
+.copyright>p {
+    margin-top: 15px;
+    margin-left: -15px;
+    font-size: 14px;
+    color: gray;
+}
+
+.copyright>img {
+    margin-left: 70px;
+}
+
+.copyright>ul>li:hover {
+    background-color: rgb(15, 83, 230);
+    transition: 0.5s;
+}
